@@ -1,0 +1,113 @@
+                            <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<style type="text/css">
+		
+		input {
+			margin: 2em 0;
+		}
+	</style>
+<link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="demo/shCore.js"></script>
+
+
+</head>
+<body>
+<!--main page-->
+<div  data-role="page" id="pagethree">  
+
+  <div data-role="navbar" data-grid="c" data-theme="e" class="fix pcnav">
+    <ul>
+       <li class="" ><a href="#overlayPanel_three"><img src="images/slide.png"></a></li>
+        <li class="nava foon2" >NEW MEMO</li>
+        <li class="navb foon2" ></li>
+       
+    </ul>
+</div><!-- /navbar end-->
+
+<!-- <div data-role="navbar" data-grid="c" data-theme="e" class="fix">
+    <ul>
+        <li class="nav" ><a href="#" id="three_logo"><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="employee_name_three">Employee Name</li>
+        <li class="navb foon2" id="employee_id_three">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel_three">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div> --><!-- /navbar end-->  
+
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel_three" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+     <!-- <ul data-role="listview" data-inset="true">
+       <li><a href="#" id="page_three_profile" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-ajax="false" ><span class="ww">My Profile</span></a></li>
+     <li><a href="#" id="three_update" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Update LPA</span></a></li>
+      </ul>  -->
+      <a href="#" id="three_signout" class="ui-btn sio ui-icon-power ui-btn-icon-left"><span class="ww sicreate">Sign Out</span></a>
+</div> <!--page slider end-->
+
+<!--content page-->
+<div data-role="main" class="ui-content confithree" >
+<script src="js/newmemo.js"></script>
+  <script type="text/javascript" src="js/mobipick.js"></script>
+   <script type="text/javascript" src="external/xdate.js"></script> 
+
+<!--1st drop down-->
+<!-- <h3 class="ui-bar ui-bar-a texsc tese" >Create LPA</h3> -->
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Port Name" class="dar" />
+
+
+<input type="text" name="partno" id="partno" placeholder="Client Name" class="dar" />
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Vessel Name" class="dar" />
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Destination" class="dar" />
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Transport Name" class="dar" />
+
+
+<input type="text" name="partno" id="partno" placeholder="Truck Number" class="dar" />
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Driver Name" class="dar" />
+
+
+
+<input type="text" name="partno" id="partno" placeholder="Driver License Number" class="dar" />
+
+
+<!--3rd drop down end-->
+<!--  <div  data-role="popup" id="popupcreatelpa" data-transition="pop" data-overlay-theme="a" class="bam">
+      <p class="yellow">Please check whether you have filled plant name, partno and shift</p>
+      <a href="#" data-rel="back"> <button type="submit"  class="ui-btn butms" >Ok</button></a>
+  </div> -->
+
+</div><!--content div end-->
+<div class="cena"><!--next button-->
+<button class="ui-btn butpc" id="two_signout">SAVE AND PRINT</button>
+<!--  <a href="#" class="ui-btn ui-corner-all ui-shadow  butmmas" id="next1">NEXT</a><br> -->
+</div><!--next button end-->
+<br>
+<br>
+<br>
+<!--footer-->
+<div data-role="" class="">
+
+</div>  
+<!--footer end-->
+</div> <!---main div page-->
+</body>
+</html>
