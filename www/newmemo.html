@@ -1,4 +1,4 @@
-                            <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,21 @@
 <link href="css/mobipick.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="demo/shCore.js"></script>
 
-
+<script type="text/javascript">
+  document.addEventListener("deviceready", onDeviceReady, false);
+  function onDeviceReady() {
+    $('.print').click(function() {
+      var type = "text/html";
+      var title = "test.html";
+      var fileContent = "<html>Phonegap Print Plugin</html>";
+      window.plugins.PrintPlugin.print(fileContent, function() {
+        console.log('success')
+      }, function() {
+        console.log('fail')
+      }, "", type, title);
+    });
+  }
+  </script>
 </head>
 <body>
 <!--main page-->
@@ -58,8 +72,6 @@
 <!--1st drop down-->
 <!-- <h3 class="ui-bar ui-bar-a texsc tese" >Create LPA</h3> -->
 
-
-
 <input type="text" name="partno" id="partno" placeholder="Port Name" class="dar" />
 
 
@@ -97,7 +109,7 @@
 
 </div><!--content div end-->
 <div class="cena"><!--next button-->
-<button class="ui-btn butpc" id="two_signout">SAVE AND PRINT</button>
+<button class="ui-btn butpc print" >SAVE AND PRINT</button>
 <!--  <a href="#" class="ui-btn ui-corner-all ui-shadow  butmmas" id="next1">NEXT</a><br> -->
 </div><!--next button end-->
 <br>
