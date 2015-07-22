@@ -34,30 +34,7 @@
   <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="StatusBarBackgroundColor" value="#000000" />
 
-  <name>PrintPlugin</name>
-  <description>Cordova Print Plugin</description>
-  <license>Apache 2.0</license>
-  <keywords>cordova,PrintPlugin</keywords>
-  <dependency id="cordova-plugin-device" url="https://github.com/apache/cordova-plugin-device.git" />
-  <dependency id="cordova-plugin-inappbrowser" url="https://github.com/apache/cordova-plugin-inappbrowser.git" />
 
-  <js-module src="www/PrintPlugin.js" name="PrintPlugin">
-    <clobbers target="window.PrintPlugin" />
-  </js-module>
-
-  <!-- ios -->
-  <platform name="ios">
-   <config-file target="config.xml" parent="/*">
-     <feature name="PrintPlugin">
-       <param name="ios-package" value="PrintPlugin" />
-     </feature>
-   </config-file>
-
-   <header-file src="src/ios/PrintPlugin.h" />
-   <source-file src="src/ios/PrintPlugin.m" />
- </platform>
-
-</plugin>
 
   <gap:config-file platform="ios" parent="UIStatusBarHidden">
     <true/>
